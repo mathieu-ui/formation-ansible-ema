@@ -1,0 +1,36 @@
+---
+
+- name: Install ntp config
+  become: true
+  hosts: all
+  tasks:
+    - name: Install chrony
+      ansible.builtin.package:
+        name: chrony
+        state: present
+        update_cache: true
+    - name: Copy ntp.conf
+      ansible.builtin.copy:
+        dest: /etc/chrony.conf
+        mode: 0644
+        content: |
+          server 0.fr.pool.ntp.org iburst
+          server 1.fr.pool.ntp.org iburst
+          server 2.fr.pool.ntp.org iburst
+          server 3.fr.pool.ntp.org iburst
+          driftfile /var/lib/chrony/drift
+          makestep 1.0 3
+          rtcsync
+          logdir /var/log/chrony
+      notify: restart chrony
+    - name: Start chrony
+      ansible.builtin.service:
+        name: chronyd
+        state: started
+        enabled: true
+  handlers:
+    - name: restart chrony
+      ansible.builtin.service:
+        name: chronyd
+        state: restarted
+        enabled: true

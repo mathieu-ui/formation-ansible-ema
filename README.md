@@ -12,3 +12,5 @@
 ## [Ansible par la pratique (8) – Idempotence](./08-Idempotence/README.MD)
 
 ## [Ansible par la pratique (10) – Un serveur web simple](./10-Serveur_web/README.MD)
+
+## [Ansible par la pratique (11) – Handler](./11-Handler/README.MD)
