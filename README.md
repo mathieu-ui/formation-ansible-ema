@@ -8,3 +8,5 @@
 ## [Ansible par la pratique (4) – Authentification](./04-Authentification/README.MD)
 
 ## [Ansible par la pratique (6) – Configuration de base](./06-Configuration_de_base/README.MD)
+
+## [Ansible par la pratique (8) – Idempotence](./08-Idempotence/README.MD)
