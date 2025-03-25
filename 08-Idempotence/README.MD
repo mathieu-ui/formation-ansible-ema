@@ -90,4 +90,6 @@ Apres le premier run on voi bien l'idempotence :
 
 ![img](./img/Screenshot_20250325_093616.png)
 
-Quand on compare les espaces disque, on remarque que le disque est plus vide après les désinstallations et suppression.
+Quand on compare les espaces disque, on remarque que le disque est plus vide après les désinstallations et suppression. 
+
+Cependant ce qui est interesant de noté, c'est que le module ansible.builtin.shell est par defaut toujours en changed, il faut rajouté un changed_when pour fix nos propre condition de changement.
