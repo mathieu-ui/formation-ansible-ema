@@ -84,7 +84,7 @@ Apres le premier run on voi bien l'idempotence :
 
 ![img](./img/Screenshot_20250325_093318.png)
 
-### Compataison
+### Comparaison
 
 ![img](./img/Screenshot_20250325_093605.png)
 
