@@ -1,0 +1,9 @@
+---
+
+- name: Print python ver install on hosts 
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Print out the python version installed on the host
+      ansible.builtin.debug:
+        msg: "The python version installed on {{ inventory_hostname }} is {{ ansible_python.version }}"

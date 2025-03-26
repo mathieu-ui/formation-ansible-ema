@@ -1,0 +1,9 @@
+---
+
+- name : Print package manager used by hosts
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Print out the package manager used by the host
+      ansible.builtin.debug:
+        msg: "The package manager on {{ inventory_hostname }} is {{ ansible_pkg_mgr }}"

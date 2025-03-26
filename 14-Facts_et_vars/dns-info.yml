@@ -1,0 +1,9 @@
+---
+
+- name: Print DNS server of hosts 
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Print out the DNS server of the host
+      ansible.builtin.debug:
+        msg: "The DNS server of {{ inventory_hostname }} is {{ ansible_dns.nameservers }}"
