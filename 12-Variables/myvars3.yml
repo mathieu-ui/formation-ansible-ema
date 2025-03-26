@@ -1,0 +1,11 @@
+---
+
+- name: Voiture playbook
+  hosts: all
+  tasks:
+    - name: Afficher la voiture
+      ansible.builtin.debug:
+        msg: "Ma voiture est une {{ mycar}}"
+    - name: Afficher la moto
+      ansible.builtin.debug:
+        msg: "Ma moto de reve est une {{ mybike}}"

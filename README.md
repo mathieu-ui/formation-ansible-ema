@@ -14,3 +14,5 @@
 ## [Ansible par la pratique (10) – Un serveur web simple](./10-Serveur_web/README.MD)
 
 ## [Ansible par la pratique (11) – Handler](./11-Handler/README.MD)
+
+## [Ansible par la pratique (12) – Variables](./12-Variables/README.MD)

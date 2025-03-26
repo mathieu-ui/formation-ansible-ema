@@ -1,0 +1,23 @@
+---
+
+- name: Voiture and moto playbook
+  hosts: localhost
+  tasks:
+    - name: Set variables
+      ansible.builtin.set_fact:
+        mycar:
+          marque: BMW
+          modele: 525i
+          couleur: gris
+          annee: 2008
+        mybike:
+          marque: Honda
+          modele: CBR
+          couleur: rouge
+          annee: 2010
+    - name: Afficher la mycar
+      ansible.builtin.debug:
+        msg: "Ma voiture est une {{ mycar.marque }} {{ mycar.modele }} de couleur {{ mycar.couleur }} de l'année {{ mycar.annee }}"
+    - name: Afficher la mybike
+      ansible.builtin.debug:
+        msg: "Ma moto de reve est une {{ mybike.marque }} {{ mybike.modele }} de couleur {{ mybike.couleur }} de l'année {{ mybike.annee }}"
