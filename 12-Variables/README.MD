@@ -44,7 +44,7 @@ ansible-playbook ./playbooks/myvars1.yml -e '{"mycar": {"marque": "Toyota", "mod
 
 ### myvars3
 
->  Ici on utilise les vars defini dans l'inventaire.
+> Ici on utilise les vars defini dans l'inventaire.
 
 Voici mon inventaire :
 

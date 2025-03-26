@@ -16,3 +16,5 @@
 ## [Ansible par la pratique (11) – Handler](./11-Handler/README.MD)
 
 ## [Ansible par la pratique (12) – Variables](./12-Variables/README.MD)
+
+## [Ansible par la pratique (13) – Variables enregistrées](./13-Variables_enregistrees/README.MD)

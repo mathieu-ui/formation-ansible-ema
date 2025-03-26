@@ -1,0 +1,16 @@
+---
+
+- name: Print kernel information
+  hosts: all
+  tasks:
+    - name: Gather kernel information
+      ansible.builtin.command:
+        cmd: uname -a
+      register: kernel_info
+      changed_when: false
+    - name: Print kernel information using msg
+      ansible.builtin.debug:
+        msg: "{{ kernel_info.stdout }}"
+    - name: Print kernel information using var
+      ansible.builtin.debug:
+        var: kernel_info.stdout
