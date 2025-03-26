@@ -20,3 +20,5 @@
 ## [Ansible par la pratique (13) – Variables enregistrées](./13-Variables_enregistrees/README.MD)
 
 ## [Ansible par la pratique (14) – Facts et variables implicites](./14-Facts_et_vars/README.MD)
+
+## [Ansible par la pratique (15) – Cibles hétérogènes](./15-Cibles/README.MD)

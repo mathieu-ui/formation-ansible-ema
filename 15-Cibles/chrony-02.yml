@@ -1,0 +1,37 @@
+- name: Install Chrony with package manager of hosts
+  hosts: all 
+  gather_facts: true
+  tasks:
+
+    - name: Include vars
+      ansible.builtin.include_vars: >
+        chrony02_{{ansible_distribution|lower|replace(" ", "-")}}.yml
+
+    - name: Install chrony on Dall hosts
+      ansible.builtin.apt:
+        name: "{{ chrony_package }}"
+        state: present
+        update_cache: true
+    
+    - name: Configure chrony
+      ansible.builtin.copy:
+        content: |-
+          server 1.fr.pool.ntp.org iburst
+          server 0.fr.pool.ntp.org iburst
+          server 2.fr.pool.ntp.org iburst
+          server 3.fr.pool.ntp.org iburst
+          driftfile /var/lib/chrony/drift
+          makestep 1.0 3
+          rtcsync
+          logdir /var/log/chrony
+        dest: "{{ chrony_confdir }}"
+        mode: '0644'
+      notify: restart chrony
+      
+  handlers:
+    - name: restart chrony
+      ansible.builtin.systemd:
+        name: "{{ chrony_service }}"
+        state: restarted
+        enabled: yes
+
