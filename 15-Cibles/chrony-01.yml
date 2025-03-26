@@ -1,3 +1,5 @@
+---
+
 - name: Install Chrony with package manager of hosts
   hosts: all
   gather_facts: true

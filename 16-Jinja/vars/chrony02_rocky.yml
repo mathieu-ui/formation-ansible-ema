@@ -1,0 +1,5 @@
+---  # vars/chrony02_rocky.yml
+
+chrony_package: "chrony"
+chrony_service: "chronyd"
+chrony_confdir: "/etc/chrony.conf"

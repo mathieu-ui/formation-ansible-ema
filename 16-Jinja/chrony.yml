@@ -16,16 +16,8 @@
         update_cache: true
     
     - name: Configure chrony
-      ansible.builtin.copy:
-        content: |-
-          server 1.fr.pool.ntp.org iburst
-          server 0.fr.pool.ntp.org iburst
-          server 2.fr.pool.ntp.org iburst
-          server 3.fr.pool.ntp.org iburst
-          driftfile /var/lib/chrony/drift
-          makestep 1.0 3
-          rtcsync
-          logdir /var/log/chrony
+      ansible.builtin.template:
+        src: chrony.conf.j2
         dest: "{{ chrony_confdir }}"
         mode: '0644'
       notify: restart chrony

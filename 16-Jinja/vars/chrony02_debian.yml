@@ -1,0 +1,5 @@
+---  # vars/chrony02_debian.yml
+
+chrony_package: "chrony"
+chrony_service: "chrony"
+chrony_confdir: "/etc/chrony/chrony.conf"

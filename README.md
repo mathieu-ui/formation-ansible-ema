@@ -22,3 +22,5 @@
 ## [Ansible par la pratique (14) – Facts et variables implicites](./14-Facts_et_vars/README.MD)
 
 ## [Ansible par la pratique (15) – Cibles hétérogènes](./15-Cibles/README.MD)
+
+## [Ansible par la pratique (16) – Jinja & Templates](./16-Jinja/README.MD)
