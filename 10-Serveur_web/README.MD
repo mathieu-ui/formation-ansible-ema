@@ -8,7 +8,7 @@ Voici le premier run du playbook :
 
 ![img](./img/Screenshot_20250325_105647.png)
 
-Voici le resultat :
+Voici le résultat :
 
 ![img](./img/Screenshot_20250325_105713.png)
 
@@ -20,7 +20,7 @@ Voici le premier run du playbook :
 
 ![img](./img/Screenshot_20250325_110615.png)
 
-Voici le resultat :
+Voici le résultat :
 
 ![img](./img/Screenshot_20250325_110630.png)
 
@@ -32,6 +32,6 @@ Voici le premier run du playbook :
 
 ![img](./img/Screenshot_20250325_110941.png)
 
-Voici le resultat :
+Voici le résultat :
 
 ![img](./img/Screenshot_20250325_111000.png)

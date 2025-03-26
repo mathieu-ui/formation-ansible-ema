@@ -2,20 +2,20 @@
 
 ## Exercice
 
-Creation du playbook :
+Création du playbook :
 
 ![img](./img/Screenshot_20250325_112612.png)
 
 [Ici se trouve le playbook chrony.yml](playbook.yml)
 
-Premiere execution :
+Première exécution :
 
 ![img](./img/Screenshot_20250325_113258.png)
 
-Lors de la premiere execution chrony est installer, configurer et restarted.
+Lors de la première exécution chrony est installer, configurer et restarted.
 
-Re-executions du playbook :
+Réexécution du playbook :
 
 ![img](./img/Screenshot_20250325_113317.png)
 
-Quand le playbook est re-executée, vu que chrony n'est pas re-configuré, il n'est pas redémaré.
+Quand le playbook est réexécution, vu que chrony n'est pas reconfiguré, il n'est pas redémarré.

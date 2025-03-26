@@ -2,9 +2,9 @@
 
 ## Exercice
 
-> Ce playbook utilise une template Jinja2 pour personalisé la conf selon la machine.
+> Ce playbook utilise une template Jinja2 pour personnalité la configuration selon la machine.
 
-Pour cela, je réutilise le playbook précedement crée pour utilisé ma template `chrony.conf.j2`.
+Pour cela, je réutilise le playbook précédemment crée pour utiliser ma template `chrony.conf.j2`.
 
 Voici la template utilisée :
 
@@ -25,6 +25,6 @@ Voici l'output du playbook :
 
 ![img](./img/Screenshot_20250326_142903.png)
 
-Quand je verifie sur les VMs, les configuration chrony on bien été personalisé selon la machine :
+Quand je vérifie sur les VMs, les configuration chrony on bien été personnalité selon la machine :
 
 ![img](./img/Screenshot_20250326_143204.png)

@@ -2,17 +2,17 @@
 
 ## Exercice
 
-> Ecriture d'un playbook qui afiche ma voiture et ma moto.
+> Écriture d'un playbook qui affiche ma voiture et ma moto.
 
 ### myvars1
 
 [Ici se trouve le playbook myvars1.yml](myvars1.yml)
 
-Voici le retour d'execution du playbook :
+Voici le retour d'exécution du playbook :
 
 ![img](./img/Screenshot_20250326_091300.png)
 
-Quand j'utilise des extravarse pour sur passer les vars du play, voici ce que cela donne :
+Quand j'utilise des extravarse pour surpasser les vars du play, voici ce que cela donne :
 
 Commande utilisé :
 
@@ -32,7 +32,7 @@ Voici le retour de ce second playbook qui utilise une task set_fact :
 
 ![img](./img/Screenshot_20250326_092134.png)
 
-Comme precedament voici le retour de ce playbook avec les vars passé en extravars.
+Comme précédemment voici le retour de ce playbook avec les vars passé en extravars.
 
 Commande utilisé :
 
@@ -44,7 +44,7 @@ ansible-playbook ./playbooks/myvars1.yml -e '{"mycar": {"marque": "Toyota", "mod
 
 ### myvars3
 
-> Ici on utilise les vars defini dans l'inventaire.
+> Ici, on utilise les vars défini dans l'inventaire.
 
 Voici mon inventaire :
 
@@ -64,15 +64,15 @@ mybike=BMW
 
 [Ici se trouve le playbook myvars3.yml](myvars3.yml)
 
-J'ai definie des variables par défaut pour touts les hosts de l'inventaire mais aussi des vars specialement pour la target02.
+J'ai défini des variables par défaut pour touts les hosts de l'inventaire, mais aussi des vars spécialement pour la target02.
 
-Voici l'output du playbooks :
+Voici l'output du playbook :
 
 ![img](./img/Screenshot_20250326_093553.png)
 
 ### display_user
 
-> Ici on test les vars qui sont input pendant l'execution du playbook
+> Ici on test les vars qui sont input pendant l'exécution du playbook
 
 [Ici se trouve le playbook display_user.yml](display_user.yml)
 

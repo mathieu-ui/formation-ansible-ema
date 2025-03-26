@@ -12,7 +12,7 @@ Ajout dans /etc/hosts :
 192.168.56.40 target03.sandbox.lan target03 
 ```
 
-Test de la conf :
+Test de la configuration :
 
 ```bash
 for HOST in target01 target02 target03; do ping -c 1 -q $HOST; done
@@ -20,7 +20,7 @@ for HOST in target01 target02 target03; do ping -c 1 -q $HOST; done
 
 ![img](./img/Screenshot_20250324_104111.png)
 
-Recuperation des clés publiques :
+Récupération des clés publiques :
 
 ```bash
 ssh-keyscan -t rsa target01 target02 target03 >> .ssh/known_hosts

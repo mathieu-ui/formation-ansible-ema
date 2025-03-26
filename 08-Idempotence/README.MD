@@ -2,7 +2,7 @@
 
 ## Exercice
 
-Pour la realisation de l'exercice, je realise deux playbooks, composé de plusieurs plays. Le premier realise les tache d'instalation et de copy de fichier. Le second désinstalle les packet et suprime les fichier.
+Pour la réalisation de l'exercice, je réalise deux playbooks, composés de plusieurs plays. Le premier réalise les tâches d'installation et de copie de fichier. Le second désinstalle les packet et supprime les fichiers.
 
 ### Playbook 1
 
@@ -80,7 +80,7 @@ Voici l'output au premier run :
 
 ![img](./img/Screenshot_20250325_093224.png)
 
-Apres le premier run on voi bien l'idempotence :
+Après le premier run on voit bien l'idempotence :
 
 ![img](./img/Screenshot_20250325_093318.png)
 
@@ -92,4 +92,4 @@ Apres le premier run on voi bien l'idempotence :
 
 Quand on compare les espaces disque, on remarque que le disque est plus vide après les désinstallations et suppression. 
 
-Cependant ce qui est interesant de noté, c'est que le module ansible.builtin.shell est par defaut toujours en changed, il faut rajouté un changed_when pour fix nos propre condition de changement.
+Cependant ce qui est intéressant de noté, c'est que le module ansible.builtin.shell est par défaut toujours en changed, il faut rajouter un changed_when pour fix nos propres conditions de changement.

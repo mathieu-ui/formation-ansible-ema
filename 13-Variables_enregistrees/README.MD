@@ -26,7 +26,7 @@ Voici le playbook :
 
 ```
 
-Ce play book affiche les info du kernel des deux façons. En utilisant msg et var. Voici l'output du playbook :
+Ce playbook affiche les infos du kernel des deux façons. En utilisant msg et var. Voici l'output du playbook :
 
 ![img](./img/Screenshot_20250326_102209.png)
 
@@ -56,6 +56,6 @@ Voici le playbook :
 
 ```
 
-Ce playbook compte le nombre de paquet installer sur l'host. Voci l'ouput du playbook :
+Ce playbook compte le nombre de paquets installé sur l'host. Voici l'output du playbook :
 
 ![img](./img/Screenshot_20250326_102852.png)

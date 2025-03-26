@@ -8,7 +8,7 @@ Ajout dans /etc/hosts :
 192.168.56.40 target03.sandbox.lan target03 
 ```
 
-> Comme dans 04-Autentofocation je configure l'authentification SSH
+> Comme dans 04-Authentification je configure l'authentification SSH
 
 J'installe ansibe avec :
 
@@ -25,7 +25,7 @@ ansible all -i target01,target02,target03 -m ping
 
 ![img](./img/Screenshot_20250324_112953.png)
 
-Je crée le fichier de configuration dans le repertoir monprojet :
+Je crée le fichier de configuration dans le répertoire monprojet :
 
 ![img](./img/Screenshot_20250324_113152.png)
 

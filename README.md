@@ -1,6 +1,8 @@
 # formation-ansible-ema
 [TPM] - MPU Formation
 
+> Rendu cours Ansible par la pratique de M. Puig Mathieu
+
 ## [Ansible par la pratique (2) – Un labo pour Ansible](./02-labo/README.MD)
 
 ## [Ansible par la pratique (3) – Installation](./03-Installation/README.md)
@@ -24,3 +26,5 @@
 ## [Ansible par la pratique (15) – Cibles hétérogènes](./15-Cibles/README.MD)
 
 ## [Ansible par la pratique (16) – Jinja & Templates](./16-Jinja/README.MD)
+
+> *Formation intéressante, surtout les labs. Dans mon entreprise (G2S) avec mon équipe, on donne des formations sur l'Automatisation, tout particulièrement ansible. Et avec ce point de vue là, j'ai trouvé les labs en utilisant Vagrant tout particulièrement intéressant et interactif.*
